@@ -16,6 +16,10 @@ public class Item implements Serializable {
     private Date data_agendamento;
     private String codigo_barra;
 
+    private int sinal;
+    private int grupo;
+
+
 
     public int getId() {
         return id;
@@ -50,6 +54,8 @@ public class Item implements Serializable {
     }
 
     public Date getData_agendamento() {
+        if (data_agendamento== null)
+            data_agendamento = new Date(1900,01,01);
         return data_agendamento;
     }
 
@@ -63,5 +69,21 @@ public class Item implements Serializable {
 
     public void setCodigo_barra(String codigo_barra) {
         this.codigo_barra = codigo_barra;
+    }
+
+    public int getSinal() {
+        return sinal;
+    }
+
+    public void setSinal(int sinal) {
+        this.sinal = sinal;
+    }
+
+    public int getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(int grupo) {
+        this.grupo = grupo;
     }
 }

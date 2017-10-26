@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="memorex.progrid.memorex">
+    package="memorex.progrid.memorex2">
 
-    <application
+    <application android:name="memorex.progrid.base.Common"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="memorex.progrid.activities.DiaActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="memorex.progrid.activities.CalendarActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="memorex.progrid.activities.ItemActivity"/>
-        <activity android:name="memorex.progrid.activities.CalendarioActivity"/>
+        <activity android:name="memorex.progrid.activities.ItemActivity" android:screenOrientation="portrait"/>
+        <activity android:name="memorex.progrid.activities.DiaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="memorex.progrid.activities.PesquisarActivity" android:screenOrientation="portrait"/>
 
     </application>
 

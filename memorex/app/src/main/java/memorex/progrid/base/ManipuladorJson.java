@@ -27,6 +27,8 @@ public class ManipuladorJson {
 
                 Dia dia = new Dia();
                 dia.setDia(json_dia.getInt("dia"));
+                dia.setMes(json_mes.getInt("mes"));
+                dia.setAno(json_mes.getInt("ano"));
 
                 mes.getDias().add(dia);
 

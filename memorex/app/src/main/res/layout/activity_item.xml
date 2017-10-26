@@ -1,16 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="memorex.progrid.activities.CalendarioActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:padding="10dp"
+        android:background="@color/amarelo"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:id="@+id/btnBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Título"
+            android:layout_margin="10dp"
+            android:textColor="@color/azul_titulo"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/txtNome"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dados"
+                android:textColor="@color/cinza_texto"
+                android:textSize="17sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/linha_alta" />
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/linha_baixa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emissor:"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Banco do Brasil S/A"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor do documento:"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$00,00"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data do agendamento:"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00/00/0000"
+                        android:textColor="@color/cinza_texto"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Código de barras:"
+                    android:textColor="@color/cinza_texto"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/txtCdBarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00000000000000000000000000000"
+                    android:textColor="@color/cinza_texto"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -8,7 +8,7 @@ import android.view.WindowManager;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 
-import memorex.progrid.memorex.R;
+import memorex.progrid.memorex2.R;
 
 public class CalendarioActivity extends ActivityBase {
 

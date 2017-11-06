@@ -21,7 +21,7 @@ import memorex.progrid.memorex2.R;
 /**
  * Created by progrid on 19/10/17.
  */
-public class ItemActivity extends AppCompatActivity {
+public class ItemActivity extends AppCompatActivity {it st
 
     private Item item;
 

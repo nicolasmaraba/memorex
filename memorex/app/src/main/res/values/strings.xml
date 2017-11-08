@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Memorex2</string>
+    <string-array name="arrayFrequencia">
+        <item></item>
+        <item>"Eventual"</item>
+        <item>"Mensal"</item>
+    </string-array>
 </resources>

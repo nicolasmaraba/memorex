@@ -1,5 +1,6 @@
 package memorex.progrid.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class ActivityBase extends AppCompatActivity {
     protected Common common;
     protected ImageView btnListOrCal;
     protected ImageView btnPesquisar;
+    protected ImageView btnLembrete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,14 @@ public class ActivityBase extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+            }
+        });
+
+        btnLembrete = (ImageView) findViewById(R.id.btnLembrete);
+        btnLembrete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityBase.this, LembreteActivity.class));
             }
         });
 

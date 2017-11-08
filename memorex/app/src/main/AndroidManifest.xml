@@ -18,6 +18,7 @@
         <activity android:name="memorex.progrid.activities.ItemActivity" android:screenOrientation="portrait"/>
         <activity android:name="memorex.progrid.activities.DiaActivity" android:screenOrientation="portrait"/>
         <activity android:name="memorex.progrid.activities.PesquisarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="memorex.progrid.activities.LembreteActivity" android:screenOrientation="portrait"/>
 
     </application>
 

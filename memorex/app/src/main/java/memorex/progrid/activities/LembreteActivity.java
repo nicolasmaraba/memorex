@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.DataTruncation;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -134,23 +135,34 @@ public class LembreteActivity extends ActivityBase {
 
     public void salvarDados() {
         String sFrequencia = "";
+        String sMensagemErro = "";
+        Boolean bDataValida = false;
 
         if (iFrequencia == 1) {
             sFrequencia = "Eventual";
-            Boolean bDataCorreta;
             SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
             formato.setLenient(false);
             String dataEvento = editTextData.getText().toString();
             try {
                 Date date = formato.parse(dataEvento);
-                bDataCorreta = true;
+                Date dataAtual =new Date();
+                if (date.getTime() <= dataAtual.getTime()){
+                    sMensagemErro = "A data deverá ser maior que a data atual";
+                }else {
+                    if ((date.getTime() - dataAtual.getTime()) / (1000 * 60 * 60 * 24) >= 365 ) {
+                        sMensagemErro = "A data do evento não pode ser posterior a um ano";
+                    }else{
+                        bDataValida = true;
+                    }
+
+                }
             } catch (ParseException e) {
-                bDataCorreta = false;
+                sMensagemErro = "Data inválida";
             }
-            if (bDataCorreta) {
+            if (bDataValida) {
                 Toast.makeText(getApplicationContext(), editTextLembrete.getText().toString() + " " + sFrequencia + " dia " + editTextData.getText().toString(), Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(getApplicationContext(), "Data inválida", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), sMensagemErro, Toast.LENGTH_LONG).show();
             }
 
         }

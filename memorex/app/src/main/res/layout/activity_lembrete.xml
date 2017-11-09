@@ -66,15 +66,23 @@
         android:layout_height="wrap_content"
         ></Spinner>
 
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione a data" />
+
     <TextView
         android:id="@+id/textViewData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escolha a data do lembrete"
+        android:text="Data selecionada"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <EditText
         android:id="@+id/editTextData"
+        android:enabled="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -84,4 +92,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salvar"/>
+
+
 </LinearLayout>

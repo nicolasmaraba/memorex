@@ -20,7 +20,6 @@ public class ActivityBase extends AppCompatActivity {
     protected Common common;
     protected ImageView btnListOrCal;
     protected ImageView btnPesquisar;
-    protected ImageView btnLembrete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +34,7 @@ public class ActivityBase extends AppCompatActivity {
         btnPesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
-        });
-
-        btnLembrete = (ImageView) findViewById(R.id.btnLembrete);
-        btnLembrete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ActivityBase.this, LembreteActivity.class));
+                startActivity(new Intent(getApplicationContext(), PesquisarActivity.class ));
             }
         });
 

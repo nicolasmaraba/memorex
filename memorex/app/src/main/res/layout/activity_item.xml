@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,323 +31,61 @@
             android:id="@+id/txtNome"/>
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:padding="0dp">
+        android:padding="10dp">
 
         <LinearLayout
-            android:id="@+id/alertLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/colorFocusedHighlight"
-            android:orientation="vertical"
-            android:visibility="visible">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="101dp"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:paddingTop="10dp"
-                    app:srcCompat="@drawable/dog" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingTop="10dp"
-                        android:text="Rex Alerta"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="24sp"
-                        android:visibility="visible" />
-
-                    <TextView
-                        android:id="@+id/alertaRex"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingBottom="15dp"
-                        android:paddingTop="15dp"
-                        android:text="Não há saldo suficiente em conta-corrente para efetivar o pagamento."
-                        android:textAppearance="@style/TextAppearance.AppCompat"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
-                <!--Button
-                    android:id="@+id/btnFechar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="Fechar" / Descomente para habilitar o botão FECHAR, descomente tbm a Activity-->
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/solutionLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
-                android:background="@color/linha_baixa" />
 
-            <LinearLayout
-                android:id="@+id/solutionOpened"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textViewSolution"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="Soluções"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:id="@+id/arrow_top"
-                    android:layout_width="74dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/arrow_top" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/solutionClosed"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:visibility="gone">
+                android:text="Dados"
+                android:textColor="@color/cinza_texto"
+                android:textSize="17sp"/>
 
-                <TextView
-                    android:id="@+id/textViewSolution"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="Soluções"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:id="@+id/arrow_down"
-                    android:layout_width="74dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/arrow_down" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/linha_alta" />
+            <View android:layout_width="match_parent" android:layout_height="1dp"
                 android:background="@color/linha_baixa" />
 
             <LinearLayout
-                android:id="@+id/solutionList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/btnPoupanca"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/azul_titulo"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/pig"
-                        android:layout_width="54dp"
-                        android:layout_height="41dp"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp"
-                        app:srcCompat="@drawable/pig" />
-
-                    <TextView
-                        android:id="@+id/resgatePoupanca"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:text="Resgate de Poupança"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/btnCredito"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/azul_titulo"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/cash"
-                        android:layout_width="54dp"
-                        android:layout_height="41dp"
-                        app:srcCompat="@drawable/cash" />
-
-                    <TextView
-                        android:id="@+id/creditoNovo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:text="Crédito Novo"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/dataLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
-                android:background="@color/linha_baixa" />
-
-            <LinearLayout
-                android:id="@+id/dataOpened"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textViewDados"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="Dados"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:id="@+id/arrow_top"
-                    android:layout_width="74dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/arrow_top" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/dataClosed"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:visibility="gone">
-
-                <TextView
-                    android:id="@+id/textViewData"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="Dados"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:id="@+id/arrow_down"
-                    android:layout_width="74dp"
-                    android:layout_height="23dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/arrow_down" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
-                android:background="@color/linha_baixa" />
-
-            <LinearLayout
-                android:id="@+id/dataList"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="15dp">
-
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Emissor:"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Banco do Brasil S/A"
-                        android:textAlignment="textEnd"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -356,23 +93,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Valor do documento:"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
 
                     <TextView
                         android:id="@+id/txtValor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="R$00,00"
-                        android:textAlignment="textEnd"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -380,20 +116,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Data do agendamento:"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
 
                     <TextView
                         android:id="@+id/txtData"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="00/00/0000"
-                        android:textAlignment="textEnd"
                         android:textColor="@color/cinza_texto"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"/>
 
                 </LinearLayout>
 
@@ -402,21 +138,20 @@
                     android:layout_height="wrap_content"
                     android:text="Código de barras:"
                     android:textColor="@color/cinza_texto"
-                    android:textSize="15sp" />
-
+                    android:textSize="15sp"/>
                 <TextView
                     android:id="@+id/txtCdBarra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="00000000000000000000000000000"
-                    android:textAlignment="center"
                     android:textColor="@color/cinza_texto"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </FrameLayout>
 
 
 

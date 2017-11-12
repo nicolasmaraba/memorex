@@ -2,74 +2,112 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.0-alpha1_353e8eacbe36eb43aec8424ad62ca94f2cea4205.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.0-alpha1_2160ddc555f96b59f9c5732718294864e6ec05fb.jar" />
-    </item>
-    <item
-        jar="C:\Windows.old\Users\Kildare\Desktop\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_5cceca7359b94161232c6d7b17901ae212fd7b3c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_5ee8918604d96fec8edf19291e82c6f50ace10ca.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_3e35afc54914510ae4e1f99b1b01dcdec6261112.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.0-alpha1_250b3795762fd8ab6c042c99901f6b6f1770b721.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
         sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_7d9c757b628fa12eb78fc3e6a4119831267a0483.jar" />
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-26.0.0-alpha1_9b962dbc8cb14a22830b9934cd98ccf4138d01db\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_249677f12b2e488e222171318f0e8612223eecec.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_feb907a0e066a6ae260d9cbe916a403d65eb8f0b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.0"
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
         sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="C:\Users\Kíldare\Documents\GitHub\memorex\memorex\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_69530c71dd6428b0f1c0f0c7c536001494fa504e.jar" />
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-26.0.0-alpha1_693b26169a0a1a3a2c6ac7eed01cdb7c22c98508\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-26.0.0-alpha1_a935c5eb541d46e36575bd63625381ea475ac5ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-26.0.0-alpha1_18c713626f603d197dd1c2ab630005d145596241\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-26.0.0-alpha1_a96645c06825a9208abd3604e07767657743976d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="477c407487c6b670e583faf638c2541faac1fcb3">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ed0831b1943eedd49a95d110cdd86049d20e6f09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-26.0.0-alpha1_d465027457761ff16b44aaf0b627111061e9a7a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\nicolas\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_ccb27bdc1d51394672ea28fdd9842f998babea9d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-26.0.0-alpha1_9be262fff74c089b4fb69992a1cd5c3783269725\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-26.0.0-alpha1_e07b0fe9645b727ad93d00836ee609ec560fc420\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2c83e82913b534435451224130824e8044fb6e70">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_cc9d1d2bdf4ae4c2c99ae00737e91c078ed0228d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\nicolas\Documents\AndroidStudioProjects\memorex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-26.0.0-alpha1_41849715620d163dcd4287fe5cd033a65d5a768e\classes.dex" />
     </item>
 
 </items>

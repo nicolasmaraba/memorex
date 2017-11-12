@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pesquisar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="memorex.progrid.activities.PesquisarActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amarelo"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:padding="4dp"
+        android:id="@+id/toolbar"
+        android:layoutDirection="locale"
+        app:titleTextColor="@color/azul_titulo"
+        app:subtitleTextColor="@color/azul_titulo"
+        app:title="  "/>
+
+    <ExpandableListView
+        android:id="@+id/listDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
